@@ -1,0 +1,1503 @@
+@prefix ex: <http://example.org/products#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+ex:product1 a ex:Product ;
+    ex:index "1"^^xsd:integer ;
+    ex:name "Compact Printer Air Advanced Digital"^^xsd:string ;
+    ex:description "Situation organization these memory much off."^^xsd:string ;
+    ex:brand "Garner, Boyle and Flynn"^^xsd:string ;
+    ex:category "Books & Stationery"^^xsd:string ;
+    ex:price "265"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "774"^^xsd:integer ;
+    ex:ean "2091465262179"^^xsd:string ;
+    ex:color "ForestGreen"^^xsd:string ;
+    ex:size "Large"^^xsd:string ;
+    ex:availability "pre_order"^^xsd:string ;
+    ex:internalId "56"^^xsd:string .
+
+ex:product2 a ex:Product ;
+    ex:index "2"^^xsd:integer ;
+    ex:name "Tablet"^^xsd:string ;
+    ex:description "Discussion loss politics free one thousand."^^xsd:string ;
+    ex:brand "Mueller Inc"^^xsd:string ;
+    ex:category "Shoes & Footwear"^^xsd:string ;
+    ex:price "502"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "81"^^xsd:integer ;
+    ex:ean "5286196620740"^^xsd:string ;
+    ex:color "Black"^^xsd:string ;
+    ex:size "8x10 in"^^xsd:string ;
+    ex:availability "in_stock"^^xsd:string ;
+    ex:internalId "29"^^xsd:string .
+
+ex:product3 a ex:Product ;
+    ex:index "3"^^xsd:integer ;
+    ex:name "Smart Blender Cooker"^^xsd:string ;
+    ex:description "No situation per."^^xsd:string ;
+    ex:brand "Lawson, Keller and Winters"^^xsd:string ;
+    ex:category "Kitchen Appliances"^^xsd:string ;
+    ex:price "227"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "726"^^xsd:integer ;
+    ex:ean "1282898648918"^^xsd:string ;
+    ex:color "SlateGray"^^xsd:string ;
+    ex:size "XS"^^xsd:string ;
+    ex:availability "in_stock"^^xsd:string ;
+    ex:internalId "70"^^xsd:string .
+
+ex:product4 a ex:Product ;
+    ex:index "4"^^xsd:integer ;
+    ex:name "Advanced Router Rechargeable"^^xsd:string ;
+    ex:description "For force gas energy six laugh."^^xsd:string ;
+    ex:brand "Gallagher and Sons"^^xsd:string ;
+    ex:category "Kitchen Appliances"^^xsd:string ;
+    ex:price "121"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "896"^^xsd:integer ;
+    ex:ean "3879177514583"^^xsd:string ;
+    ex:color "PaleGreen"^^xsd:string ;
+    ex:size "L"^^xsd:string ;
+    ex:availability "discontinued"^^xsd:string ;
+    ex:internalId "31"^^xsd:string .
+
+ex:product5 a ex:Product ;
+    ex:index "5"^^xsd:integer ;
+    ex:name "Portable Mouse Monitor Phone"^^xsd:string ;
+    ex:description "Feeling back religious however author room scientist."^^xsd:string ;
+    ex:brand "Irwin LLC"^^xsd:string ;
+    ex:category "Kids' Clothing"^^xsd:string ;
+    ex:price "1"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "925"^^xsd:integer ;
+    ex:ean "9055773261265"^^xsd:string ;
+    ex:color "SeaShell"^^xsd:string ;
+    ex:size "100x200 mm"^^xsd:string ;
+    ex:availability "discontinued"^^xsd:string ;
+    ex:internalId "10"^^xsd:string .
+
+ex:product6 a ex:Product ;
+    ex:index "6"^^xsd:integer ;
+    ex:name "Radio"^^xsd:string ;
+    ex:description "Character prove growth contain serious customer."^^xsd:string ;
+    ex:brand "Benjamin, Nelson and Hancock"^^xsd:string ;
+    ex:category "Skincare"^^xsd:string ;
+    ex:price "426"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "549"^^xsd:integer ;
+    ex:ean "1150028980156"^^xsd:string ;
+    ex:color "CornflowerBlue"^^xsd:string ;
+    ex:size "30x40 cm"^^xsd:string ;
+    ex:availability "pre_order"^^xsd:string ;
+    ex:internalId "60"^^xsd:string .
+
+ex:product7 a ex:Product ;
+    ex:index "7"^^xsd:integer ;
+    ex:name "Ultra Projector Oven Thermostat Prime Advanced"^^xsd:string ;
+    ex:description "Pattern possible look necessary indicate work nearly."^^xsd:string ;
+    ex:brand "Mccoy, Waters and Rose"^^xsd:string ;
+    ex:category "Laptops & Computers"^^xsd:string ;
+    ex:price "68"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "870"^^xsd:integer ;
+    ex:ean "5029747624534"^^xsd:string ;
+    ex:color "Purple"^^xsd:string ;
+    ex:size "S"^^xsd:string ;
+    ex:availability "discontinued"^^xsd:string ;
+    ex:internalId "86"^^xsd:string .
+
+ex:product8 a ex:Product ;
+    ex:index "8"^^xsd:integer ;
+    ex:name "Webcam Stove Grill"^^xsd:string ;
+    ex:description "Deep area join carry age."^^xsd:string ;
+    ex:brand "Morrow and Sons"^^xsd:string ;
+    ex:category "Automotive"^^xsd:string ;
+    ex:price "159"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "584"^^xsd:integer ;
+    ex:ean "9883725074294"^^xsd:string ;
+    ex:color "MediumOrchid"^^xsd:string ;
+    ex:size "8x10 in"^^xsd:string ;
+    ex:availability "pre_order"^^xsd:string ;
+    ex:internalId "50"^^xsd:string .
+
+ex:product9 a ex:Product ;
+    ex:index "9"^^xsd:integer ;
+    ex:name "Eco Radio"^^xsd:string ;
+    ex:description "Know father for act let."^^xsd:string ;
+    ex:brand "Edwards, Odonnell and Conley"^^xsd:string ;
+    ex:category "Skincare"^^xsd:string ;
+    ex:price "454"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "499"^^xsd:integer ;
+    ex:ean "1773215338624"^^xsd:string ;
+    ex:color "DimGray"^^xsd:string ;
+    ex:size "Medium"^^xsd:string ;
+    ex:availability "pre_order"^^xsd:string ;
+    ex:internalId "88"^^xsd:string .
+
+ex:product10 a ex:Product ;
+    ex:index "10"^^xsd:integer ;
+    ex:name "Ultra Powerbank Brush Charger Max"^^xsd:string ;
+    ex:description "Meeting add economic task outside."^^xsd:string ;
+    ex:brand "Brennan, Archer and Rosales"^^xsd:string ;
+    ex:category "Fitness Equipment"^^xsd:string ;
+    ex:price "845"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "564"^^xsd:integer ;
+    ex:ean "4877111475333"^^xsd:string ;
+    ex:color "Silver"^^xsd:string ;
+    ex:size "Extra Large"^^xsd:string ;
+    ex:availability "discontinued"^^xsd:string ;
+    ex:internalId "88"^^xsd:string .
+
+ex:product11 a ex:Product ;
+    ex:index "11"^^xsd:integer ;
+    ex:name "Wireless Dock"^^xsd:string ;
+    ex:description "Whole bill sound whether will."^^xsd:string ;
+    ex:brand "Russo-West"^^xsd:string ;
+    ex:category "Health & Wellness"^^xsd:string ;
+    ex:price "257"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "168"^^xsd:integer ;
+    ex:ean "9680811891595"^^xsd:string ;
+    ex:color "Wheat"^^xsd:string ;
+    ex:size "Extra Large"^^xsd:string ;
+    ex:availability "pre_order"^^xsd:string ;
+    ex:internalId "30"^^xsd:string .
+
+ex:product12 a ex:Product ;
+    ex:index "12"^^xsd:integer ;
+    ex:name "Fast Camera Router Fan Smart"^^xsd:string ;
+    ex:description "Various above trouble itself crime form."^^xsd:string ;
+    ex:brand "Vazquez and Sons"^^xsd:string ;
+    ex:category "Cleaning Supplies"^^xsd:string ;
+    ex:price "221"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "672"^^xsd:integer ;
+    ex:ean "8567222480604"^^xsd:string ;
+    ex:color "MidnightBlue"^^xsd:string ;
+    ex:size "Medium"^^xsd:string ;
+    ex:availability "pre_order"^^xsd:string ;
+    ex:internalId "32"^^xsd:string .
+
+ex:product13 a ex:Product ;
+    ex:index "13"^^xsd:integer ;
+    ex:name "Heater Radio"^^xsd:string ;
+    ex:description "Ten do evidence billion perhaps read bank enter."^^xsd:string ;
+    ex:brand "Delgado-Blackwell"^^xsd:string ;
+    ex:category "Cycling"^^xsd:string ;
+    ex:price "689"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "156"^^xsd:integer ;
+    ex:ean "5686660235911"^^xsd:string ;
+    ex:color "Orange"^^xsd:string ;
+    ex:size "L"^^xsd:string ;
+    ex:availability "pre_order"^^xsd:string ;
+    ex:internalId "57"^^xsd:string .
+
+ex:product14 a ex:Product ;
+    ex:index "14"^^xsd:integer ;
+    ex:name "Smart Trimmer Webcam Heater"^^xsd:string ;
+    ex:description "Example available better."^^xsd:string ;
+    ex:brand "Contreras PLC"^^xsd:string ;
+    ex:category "Automotive"^^xsd:string ;
+    ex:price "279"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "818"^^xsd:integer ;
+    ex:ean "1941032767914"^^xsd:string ;
+    ex:color "Gainsboro"^^xsd:string ;
+    ex:size "XXL"^^xsd:string ;
+    ex:availability "pre_order"^^xsd:string ;
+    ex:internalId "66"^^xsd:string .
+
+ex:product15 a ex:Product ;
+    ex:index "15"^^xsd:integer ;
+    ex:name "Webcam Dock Heater"^^xsd:string ;
+    ex:description "State yet soon traditional your deal."^^xsd:string ;
+    ex:brand "Juarez, Powell and Travis"^^xsd:string ;
+    ex:category "Cleaning Supplies"^^xsd:string ;
+    ex:price "101"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "159"^^xsd:integer ;
+    ex:ean "1438856474369"^^xsd:string ;
+    ex:color "Sienna"^^xsd:string ;
+    ex:size "30x40 cm"^^xsd:string ;
+    ex:availability "pre_order"^^xsd:string ;
+    ex:internalId "88"^^xsd:string .
+
+ex:product16 a ex:Product ;
+    ex:index "16"^^xsd:integer ;
+    ex:name "Automatic Watch Lite Sense"^^xsd:string ;
+    ex:description "As east entire positive source their."^^xsd:string ;
+    ex:brand "Reid, Chase and Ballard"^^xsd:string ;
+    ex:category "Team Sports"^^xsd:string ;
+    ex:price "316"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "329"^^xsd:integer ;
+    ex:ean "3500722785805"^^xsd:string ;
+    ex:color "Tan"^^xsd:string ;
+    ex:size "5x7 in"^^xsd:string ;
+    ex:availability "limited_stock"^^xsd:string ;
+    ex:internalId "44"^^xsd:string .
+
+ex:product17 a ex:Product ;
+    ex:index "17"^^xsd:integer ;
+    ex:name "Eco Iron Monitor Air"^^xsd:string ;
+    ex:description "Color single indeed yard event popular food boy."^^xsd:string ;
+    ex:brand "Barker-Murphy"^^xsd:string ;
+    ex:category "Automotive"^^xsd:string ;
+    ex:price "982"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "47"^^xsd:integer ;
+    ex:ean "7887280730963"^^xsd:string ;
+    ex:color "OliveDrab"^^xsd:string ;
+    ex:size "XL"^^xsd:string ;
+    ex:availability "out_of_stock"^^xsd:string ;
+    ex:internalId "79"^^xsd:string .
+
+ex:product18 a ex:Product ;
+    ex:index "18"^^xsd:integer ;
+    ex:name "Digital Tablet Router Printer Lite"^^xsd:string ;
+    ex:description "Accept campaign every research test."^^xsd:string ;
+    ex:brand "Vazquez-Smith"^^xsd:string ;
+    ex:category "Health & Wellness"^^xsd:string ;
+    ex:price "3"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "732"^^xsd:integer ;
+    ex:ean "4170125892616"^^xsd:string ;
+    ex:color "LemonChiffon"^^xsd:string ;
+    ex:size "10x10 cm"^^xsd:string ;
+    ex:availability "in_stock"^^xsd:string ;
+    ex:internalId "54"^^xsd:string .
+
+ex:product19 a ex:Product ;
+    ex:index "19"^^xsd:integer ;
+    ex:name "Eco Speaker Lite"^^xsd:string ;
+    ex:description "Democrat building tonight nearly including born beautiful."^^xsd:string ;
+    ex:brand "Adams, Davis and Holmes"^^xsd:string ;
+    ex:category "Tools"^^xsd:string ;
+    ex:price "536"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "637"^^xsd:integer ;
+    ex:ean "9912659743326"^^xsd:string ;
+    ex:color "DarkKhaki"^^xsd:string ;
+    ex:size "5x7 in"^^xsd:string ;
+    ex:availability "discontinued"^^xsd:string ;
+    ex:internalId "29"^^xsd:string .
+
+ex:product20 a ex:Product ;
+    ex:index "20"^^xsd:integer ;
+    ex:name "Monitor"^^xsd:string ;
+    ex:description "Key activity especially tonight reduce decade."^^xsd:string ;
+    ex:brand "Caldwell Ltd"^^xsd:string ;
+    ex:category "Home Decor"^^xsd:string ;
+    ex:price "486"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "699"^^xsd:integer ;
+    ex:ean "6318912655408"^^xsd:string ;
+    ex:color "CadetBlue"^^xsd:string ;
+    ex:size "M"^^xsd:string ;
+    ex:availability "pre_order"^^xsd:string ;
+    ex:internalId "56"^^xsd:string .
+
+ex:product21 a ex:Product ;
+    ex:index "21"^^xsd:integer ;
+    ex:name "Lite Heater Sense Webcam"^^xsd:string ;
+    ex:description "Material someone issue much."^^xsd:string ;
+    ex:brand "Mitchell, Watson and Vaughan"^^xsd:string ;
+    ex:category "Team Sports"^^xsd:string ;
+    ex:price "619"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "330"^^xsd:integer ;
+    ex:ean "8862308685800"^^xsd:string ;
+    ex:color "BurlyWood"^^xsd:string ;
+    ex:size "Extra Large"^^xsd:string ;
+    ex:availability "in_stock"^^xsd:string ;
+    ex:internalId "10"^^xsd:string .
+
+ex:product22 a ex:Product ;
+    ex:index "22"^^xsd:integer ;
+    ex:name "Rechargeable Scanner"^^xsd:string ;
+    ex:description "Trouble somebody including."^^xsd:string ;
+    ex:brand "Guzman Inc"^^xsd:string ;
+    ex:category "Makeup"^^xsd:string ;
+    ex:price "582"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "607"^^xsd:integer ;
+    ex:ean "5632862267965"^^xsd:string ;
+    ex:color "LightSlateGray"^^xsd:string ;
+    ex:size "XL"^^xsd:string ;
+    ex:availability "in_stock"^^xsd:string ;
+    ex:internalId "26"^^xsd:string .
+
+ex:product23 a ex:Product ;
+    ex:index "23"^^xsd:integer ;
+    ex:name "Refrigerator Stove Scanner Headphones"^^xsd:string ;
+    ex:description "Machine industry identify everything."^^xsd:string ;
+    ex:brand "Farmer Inc"^^xsd:string ;
+    ex:category "Tools"^^xsd:string ;
+    ex:price "627"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "843"^^xsd:integer ;
+    ex:ean "6632084388479"^^xsd:string ;
+    ex:color "Moccasin"^^xsd:string ;
+    ex:size "10x10 cm"^^xsd:string ;
+    ex:availability "backorder"^^xsd:string ;
+    ex:internalId "36"^^xsd:string .
+
+ex:product24 a ex:Product ;
+    ex:index "24"^^xsd:integer ;
+    ex:name "Iron Monitor Air Lite"^^xsd:string ;
+    ex:description "Investment process third establish."^^xsd:string ;
+    ex:brand "Pearson-Mendoza"^^xsd:string ;
+    ex:category "Skincare"^^xsd:string ;
+    ex:price "302"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "382"^^xsd:integer ;
+    ex:ean "2098318077097"^^xsd:string ;
+    ex:color "SlateBlue"^^xsd:string ;
+    ex:size "50x70 cm"^^xsd:string ;
+    ex:availability "in_stock"^^xsd:string ;
+    ex:internalId "65"^^xsd:string .
+
+ex:product25 a ex:Product ;
+    ex:index "25"^^xsd:integer ;
+    ex:name "Webcam Dock Advanced Radio"^^xsd:string ;
+    ex:description "Painting interesting likely science."^^xsd:string ;
+    ex:brand "Alexander, Haynes and Trujillo"^^xsd:string ;
+    ex:category "Haircare"^^xsd:string ;
+    ex:price "395"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "835"^^xsd:integer ;
+    ex:ean "4318014033326"^^xsd:string ;
+    ex:color "Lavender"^^xsd:string ;
+    ex:size "M"^^xsd:string ;
+    ex:availability "in_stock"^^xsd:string ;
+    ex:internalId "78"^^xsd:string .
+
+ex:product26 a ex:Product ;
+    ex:index "26"^^xsd:integer ;
+    ex:name "Wireless Printer Fast Webcam Lite"^^xsd:string ;
+    ex:description "Performance inside behavior."^^xsd:string ;
+    ex:brand "Kennedy, Cole and Carlson"^^xsd:string ;
+    ex:category "Home Decor"^^xsd:string ;
+    ex:price "564"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "524"^^xsd:integer ;
+    ex:ean "2734316399779"^^xsd:string ;
+    ex:color "PaleGoldenRod"^^xsd:string ;
+    ex:size "30x40 cm"^^xsd:string ;
+    ex:availability "backorder"^^xsd:string ;
+    ex:internalId "97"^^xsd:string .
+
+ex:product27 a ex:Product ;
+    ex:index "27"^^xsd:integer ;
+    ex:name "Advanced Soundbar Monitor Prime"^^xsd:string ;
+    ex:description "Myself structure along gun increase."^^xsd:string ;
+    ex:brand "Sanders-Garcia"^^xsd:string ;
+    ex:category "Fragrances"^^xsd:string ;
+    ex:price "449"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "355"^^xsd:integer ;
+    ex:ean "1084663516838"^^xsd:string ;
+    ex:color "Wheat"^^xsd:string ;
+    ex:size "5x7 in"^^xsd:string ;
+    ex:availability "pre_order"^^xsd:string ;
+    ex:internalId "8"^^xsd:string .
+
+ex:product28 a ex:Product ;
+    ex:index "28"^^xsd:integer ;
+    ex:name "Trimmer"^^xsd:string ;
+    ex:description "Hear reduce coach actually."^^xsd:string ;
+    ex:brand "Green-Holmes"^^xsd:string ;
+    ex:category "Laptops & Computers"^^xsd:string ;
+    ex:price "668"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "298"^^xsd:integer ;
+    ex:ean "3451758732899"^^xsd:string ;
+    ex:color "DimGray"^^xsd:string ;
+    ex:size "30x40 cm"^^xsd:string ;
+    ex:availability "pre_order"^^xsd:string ;
+    ex:internalId "23"^^xsd:string .
+
+ex:product29 a ex:Product ;
+    ex:index "29"^^xsd:integer ;
+    ex:name "Trimmer Iron Lite Webcam"^^xsd:string ;
+    ex:description "Fly similar Congress."^^xsd:string ;
+    ex:brand "Sullivan PLC"^^xsd:string ;
+    ex:category "Laptops & Computers"^^xsd:string ;
+    ex:price "690"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "948"^^xsd:integer ;
+    ex:ean "0612437686732"^^xsd:string ;
+    ex:color "MediumVioletRed"^^xsd:string ;
+    ex:size "8x10 in"^^xsd:string ;
+    ex:availability "discontinued"^^xsd:string ;
+    ex:internalId "26"^^xsd:string .
+
+ex:product30 a ex:Product ;
+    ex:index "30"^^xsd:integer ;
+    ex:name "Brush Air"^^xsd:string ;
+    ex:description "Field realize practice."^^xsd:string ;
+    ex:brand "Wells-Simpson"^^xsd:string ;
+    ex:category "Men's Clothing"^^xsd:string ;
+    ex:price "752"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "619"^^xsd:integer ;
+    ex:ean "8408823896893"^^xsd:string ;
+    ex:color "White"^^xsd:string ;
+    ex:size "30x40 cm"^^xsd:string ;
+    ex:availability "pre_order"^^xsd:string ;
+    ex:internalId "62"^^xsd:string .
+
+ex:product31 a ex:Product ;
+    ex:index "31"^^xsd:integer ;
+    ex:name "Lite Soundbar"^^xsd:string ;
+    ex:description "Interest bring maintain."^^xsd:string ;
+    ex:brand "Williams, Fisher and Rojas"^^xsd:string ;
+    ex:category "Toys & Games"^^xsd:string ;
+    ex:price "622"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "234"^^xsd:integer ;
+    ex:ean "1584847074969"^^xsd:string ;
+    ex:color "GhostWhite"^^xsd:string ;
+    ex:size "8x10 in"^^xsd:string ;
+    ex:availability "discontinued"^^xsd:string ;
+    ex:internalId "48"^^xsd:string .
+
+ex:product32 a ex:Product ;
+    ex:index "32"^^xsd:integer ;
+    ex:name "Portable Soundbar Scanner Brush"^^xsd:string ;
+    ex:description "Response speech debate."^^xsd:string ;
+    ex:brand "Stevenson-Henson"^^xsd:string ;
+    ex:category "Tools"^^xsd:string ;
+    ex:price "363"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "690"^^xsd:integer ;
+    ex:ean "1048062738732"^^xsd:string ;
+    ex:color "Olive"^^xsd:string ;
+    ex:size "10x10 cm"^^xsd:string ;
+    ex:availability "pre_order"^^xsd:string ;
+    ex:internalId "5"^^xsd:string .
+
+ex:product33 a ex:Product ;
+    ex:index "33"^^xsd:integer ;
+    ex:name "Brush Advanced Lite Watch"^^xsd:string ;
+    ex:description "Thing pretty might control operation."^^xsd:string ;
+    ex:brand "Gonzales and Sons"^^xsd:string ;
+    ex:category "Beauty & Personal Care"^^xsd:string ;
+    ex:price "467"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "886"^^xsd:integer ;
+    ex:ean "6468978896618"^^xsd:string ;
+    ex:color "BurlyWood"^^xsd:string ;
+    ex:size "L"^^xsd:string ;
+    ex:availability "discontinued"^^xsd:string ;
+    ex:internalId "69"^^xsd:string .
+
+ex:product34 a ex:Product ;
+    ex:index "34"^^xsd:integer ;
+    ex:name "Webcam Clean Sense Phone"^^xsd:string ;
+    ex:description "Goal generation already."^^xsd:string ;
+    ex:brand "Fox and Sons"^^xsd:string ;
+    ex:category "Men's Clothing"^^xsd:string ;
+    ex:price "278"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "329"^^xsd:integer ;
+    ex:ean "8766551329823"^^xsd:string ;
+    ex:color "Green"^^xsd:string ;
+    ex:size "Large"^^xsd:string ;
+    ex:availability "limited_stock"^^xsd:string ;
+    ex:internalId "81"^^xsd:string .
+
+ex:product35 a ex:Product ;
+    ex:index "35"^^xsd:integer ;
+    ex:name "Wireless Printer Toaster Lite Rechargeable"^^xsd:string ;
+    ex:description "Theory ok outside."^^xsd:string ;
+    ex:brand "Huang Ltd"^^xsd:string ;
+    ex:category "Furniture"^^xsd:string ;
+    ex:price "435"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "988"^^xsd:integer ;
+    ex:ean "1641388821893"^^xsd:string ;
+    ex:color "Plum"^^xsd:string ;
+    ex:size "5x7 in"^^xsd:string ;
+    ex:availability "in_stock"^^xsd:string ;
+    ex:internalId "18"^^xsd:string .
+
+ex:product36 a ex:Product ;
+    ex:index "36"^^xsd:integer ;
+    ex:name "Eco Grill Iron Fan"^^xsd:string ;
+    ex:description "Able week window."^^xsd:string ;
+    ex:brand "Riley, Williams and Warner"^^xsd:string ;
+    ex:category "Skincare"^^xsd:string ;
+    ex:price "622"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "396"^^xsd:integer ;
+    ex:ean "4263832287263"^^xsd:string ;
+    ex:color "Navy"^^xsd:string ;
+    ex:size "L"^^xsd:string ;
+    ex:availability "discontinued"^^xsd:string ;
+    ex:internalId "80"^^xsd:string .
+
+ex:product37 a ex:Product ;
+    ex:index "37"^^xsd:integer ;
+    ex:name "Lite Camera"^^xsd:string ;
+    ex:description "Analysis turn behavior."^^xsd:string ;
+    ex:brand "Thomas Inc"^^xsd:string ;
+    ex:category "Laptops & Computers"^^xsd:string ;
+    ex:price "695"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "439"^^xsd:integer ;
+    ex:ean "8881878653042"^^xsd:string ;
+    ex:color "White"^^xsd:string ;
+    ex:size "10x10 cm"^^xsd:string ;
+    ex:availability "limited_stock"^^xsd:string ;
+    ex:internalId "96"^^xsd:string .
+
+ex:product38 a ex:Product ;
+    ex:index "38"^^xsd:integer ;
+    ex:name "Automatic Thermostat Speaker Tablet Camera"^^xsd:string ;
+    ex:description "Mission pull during."^^xsd:string ;
+    ex:brand "Rodriguez-Oconnor"^^xsd:string ;
+    ex:category "Home Decor"^^xsd:string ;
+    ex:price "326"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "175"^^xsd:integer ;
+    ex:ean "9388698050078"^^xsd:string ;
+    ex:color "MediumVioletRed"^^xsd:string ;
+    ex:size "8x10 in"^^xsd:string ;
+    ex:availability "out_of_stock"^^xsd:string ;
+    ex:internalId "45"^^xsd:string .
+
+ex:product39 a ex:Product ;
+    ex:index "39"^^xsd:integer ;
+    ex:name "Compact Router Soundbar"^^xsd:string ;
+    ex:description "Guess economy behind artist."^^xsd:string ;
+    ex:brand "Phillips-Ferguson"^^xsd:string ;
+    ex:category "Video Games & Consoles"^^xsd:string ;
+    ex:price "376"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "835"^^xsd:integer ;
+    ex:ean "2073867169346"^^xsd:string ;
+    ex:color "SeaShell"^^xsd:string ;
+    ex:size "8x10 in"^^xsd:string ;
+    ex:availability "in_stock"^^xsd:string ;
+    ex:internalId "97"^^xsd:string .
+
+ex:product40 a ex:Product ;
+    ex:index "40"^^xsd:integer ;
+    ex:name "Toaster"^^xsd:string ;
+    ex:description "Least window responsibility."^^xsd:string ;
+    ex:brand "Osborne-Oliver"^^xsd:string ;
+    ex:category "Books & Stationery"^^xsd:string ;
+    ex:price "308"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "785"^^xsd:integer ;
+    ex:ean "8027316992062"^^xsd:string ;
+    ex:color "HotPink"^^xsd:string ;
+    ex:size "Small"^^xsd:string ;
+    ex:availability "pre_order"^^xsd:string ;
+    ex:internalId "67"^^xsd:string .
+
+ex:product41 a ex:Product ;
+    ex:index "41"^^xsd:integer ;
+    ex:name "Lite Brush Powerbank Sense"^^xsd:string ;
+    ex:description "Last collection including Republican increase field."^^xsd:string ;
+    ex:brand "Brooks-Avila"^^xsd:string ;
+    ex:category "Health & Wellness"^^xsd:string ;
+    ex:price "506"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "577"^^xsd:integer ;
+    ex:ean "4748612802859"^^xsd:string ;
+    ex:color "DarkOliveGreen"^^xsd:string ;
+    ex:size "Small"^^xsd:string ;
+    ex:availability "in_stock"^^xsd:string ;
+    ex:internalId "11"^^xsd:string .
+
+ex:product42 a ex:Product ;
+    ex:index "42"^^xsd:integer ;
+    ex:name "Digital Toaster"^^xsd:string ;
+    ex:description "Meeting director shoulder."^^xsd:string ;
+    ex:brand "Rodriguez-Washington"^^xsd:string ;
+    ex:category "Furniture"^^xsd:string ;
+    ex:price "186"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "819"^^xsd:integer ;
+    ex:ean "9006449883746"^^xsd:string ;
+    ex:color "Sienna"^^xsd:string ;
+    ex:size "10x10 cm"^^xsd:string ;
+    ex:availability "in_stock"^^xsd:string ;
+    ex:internalId "98"^^xsd:string .
+
+ex:product43 a ex:Product ;
+    ex:index "43"^^xsd:integer ;
+    ex:name "Lite Heater Refrigerator"^^xsd:string ;
+    ex:description "Region another produce care."^^xsd:string ;
+    ex:brand "Mitchell Ltd"^^xsd:string ;
+    ex:category "Kitchen Appliances"^^xsd:string ;
+    ex:price "685"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "142"^^xsd:integer ;
+    ex:ean "2677486808076"^^xsd:string ;
+    ex:color "MediumTurquoise"^^xsd:string ;
+    ex:size "XS"^^xsd:string ;
+    ex:availability "out_of_stock"^^xsd:string ;
+    ex:internalId "69"^^xsd:string .
+
+ex:product44 a ex:Product ;
+    ex:index "44"^^xsd:integer ;
+    ex:name "Watch Monitor"^^xsd:string ;
+    ex:description "Down population Democrat support."^^xsd:string ;
+    ex:brand "Foster-King"^^xsd:string ;
+    ex:category "Cameras & Accessories"^^xsd:string ;
+    ex:price "430"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "819"^^xsd:integer ;
+    ex:ean "2863758399929"^^xsd:string ;
+    ex:color "Beige"^^xsd:string ;
+    ex:size "30x40 cm"^^xsd:string ;
+    ex:availability "in_stock"^^xsd:string ;
+    ex:internalId "67"^^xsd:string .
+
+ex:product45 a ex:Product ;
+    ex:index "45"^^xsd:integer ;
+    ex:name "Ultra Speakerphone Lite Thermostat"^^xsd:string ;
+    ex:description "Ground author fire."^^xsd:string ;
+    ex:brand "Rodriguez, Hutchinson and Yang"^^xsd:string ;
+    ex:category "Furniture"^^xsd:string ;
+    ex:price "558"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "376"^^xsd:integer ;
+    ex:ean "9166746421826"^^xsd:string ;
+    ex:color "Plum"^^xsd:string ;
+    ex:size "50x70 cm"^^xsd:string ;
+    ex:availability "pre_order"^^xsd:string ;
+    ex:internalId "95"^^xsd:string .
+
+ex:product46 a ex:Product ;
+    ex:index "46"^^xsd:integer ;
+    ex:name "Silent Monitor Digital"^^xsd:string ;
+    ex:description "Explain gun collection."^^xsd:string ;
+    ex:brand "Sanders, Colon and Atkinson"^^xsd:string ;
+    ex:category "Cycling"^^xsd:string ;
+    ex:price "644"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "396"^^xsd:integer ;
+    ex:ean "9663931817682"^^xsd:string ;
+    ex:color "DarkCyan"^^xsd:string ;
+    ex:size "8x10 in"^^xsd:string ;
+    ex:availability "discontinued"^^xsd:string ;
+    ex:internalId "41"^^xsd:string .
+
+ex:product47 a ex:Product ;
+    ex:index "47"^^xsd:integer ;
+    ex:name "Watch Eco"^^xsd:string ;
+    ex:description "Positive least weight much."^^xsd:string ;
+    ex:brand "Rhodes, Young and Martinez"^^xsd:string ;
+    ex:category "Cameras & Accessories"^^xsd:string ;
+    ex:price "133"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "803"^^xsd:integer ;
+    ex:ean "4532746437423"^^xsd:string ;
+    ex:color "Wheat"^^xsd:string ;
+    ex:size "XXL"^^xsd:string ;
+    ex:availability "discontinued"^^xsd:string ;
+    ex:internalId "76"^^xsd:string .
+
+ex:product48 a ex:Product ;
+    ex:index "48"^^xsd:integer ;
+    ex:name "Rechargeable Speakerphone Dock Lite Eco"^^xsd:string ;
+    ex:description "Process heavy imagine TV discover."^^xsd:string ;
+    ex:brand "Williams-Jackson"^^xsd:string ;
+    ex:category "Haircare"^^xsd:string ;
+    ex:price "368"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "914"^^xsd:integer ;
+    ex:ean "0177976584074"^^xsd:string ;
+    ex:color "MidnightBlue"^^xsd:string ;
+    ex:size "XXL"^^xsd:string ;
+    ex:availability "out_of_stock"^^xsd:string ;
+    ex:internalId "42"^^xsd:string .
+
+ex:product49 a ex:Product ;
+    ex:index "49"^^xsd:integer ;
+    ex:name "Stove Soundbar Max Scale Rechargeable"^^xsd:string ;
+    ex:description "Throughout poor TV."^^xsd:string ;
+    ex:brand "Beck Inc"^^xsd:string ;
+    ex:category "Fitness Equipment"^^xsd:string ;
+    ex:price "467"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "506"^^xsd:integer ;
+    ex:ean "2772651803746"^^xsd:string ;
+    ex:color "White"^^xsd:string ;
+    ex:size "8x10 in"^^xsd:string ;
+    ex:availability "discontinued"^^xsd:string ;
+    ex:internalId "23"^^xsd:string .
+
+ex:product50 a ex:Product ;
+    ex:index "50"^^xsd:integer ;
+    ex:name "Rechargeable Mouse Powerbank Digital Silent"^^xsd:string ;
+    ex:description "Country indeed support."^^xsd:string ;
+    ex:brand "Robles, Russell and Barnes"^^xsd:string ;
+    ex:category "Furniture"^^xsd:string ;
+    ex:price "664"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "877"^^xsd:integer ;
+    ex:ean "0518878348655"^^xsd:string ;
+    ex:color "DarkSlateGray"^^xsd:string ;
+    ex:size "Extra Large"^^xsd:string ;
+    ex:availability "pre_order"^^xsd:string ;
+    ex:internalId "24"^^xsd:string .
+
+ex:product51 a ex:Product ;
+    ex:index "51"^^xsd:integer ;
+    ex:name "Lite Mixer Treadmill Radio Silent"^^xsd:string ;
+    ex:description "Particularly community decade."^^xsd:string ;
+    ex:brand "Thompson-Williams"^^xsd:string ;
+    ex:category "Kitchen Appliances"^^xsd:string ;
+    ex:price "742"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "859"^^xsd:integer ;
+    ex:ean "1804296076893"^^xsd:string ;
+    ex:color "Violet"^^xsd:string ;
+    ex:size "Large"^^xsd:string ;
+    ex:availability "in_stock"^^xsd:string ;
+    ex:internalId "49"^^xsd:string .
+
+ex:product52 a ex:Product ;
+    ex:index "52"^^xsd:integer ;
+    ex:name "Lite Dock Watch Camera"^^xsd:string ;
+    ex:description "Reduce recently level during."^^xsd:string ;
+    ex:brand "Lee, Williamson and Little"^^xsd:string ;
+    ex:category "Health & Wellness"^^xsd:string ;
+    ex:price "242"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "169"^^xsd:integer ;
+    ex:ean "6031387046326"^^xsd:string ;
+    ex:color "LemonChiffon"^^xsd:string ;
+    ex:size "10x10 cm"^^xsd:string ;
+    ex:availability "in_stock"^^xsd:string ;
+    ex:internalId "78"^^xsd:string .
+
+ex:product53 a ex:Product ;
+    ex:index "53"^^xsd:integer ;
+    ex:name "Camera Air"^^xsd:string ;
+    ex:description "Decade call quality along."^^xsd:string ;
+    ex:brand "Ross-Harris"^^xsd:string ;
+    ex:category "Shoes & Footwear"^^xsd:string ;
+    ex:price "516"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "656"^^xsd:integer ;
+    ex:ean "9626830476799"^^xsd:string ;
+    ex:color "PaleVioletRed"^^xsd:string ;
+    ex:size "S"^^xsd:string ;
+    ex:availability "in_stock"^^xsd:string ;
+    ex:internalId "60"^^xsd:string .
+
+ex:product54 a ex:Product ;
+    ex:index "54"^^xsd:integer ;
+    ex:name "Monitor Refrigerator Router"^^xsd:string ;
+    ex:description "Remain able building."^^xsd:string ;
+    ex:brand "Goodman, Long and Morris"^^xsd:string ;
+    ex:category "Men's Clothing"^^xsd:string ;
+    ex:price "502"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "764"^^xsd:integer ;
+    ex:ean "3073685421698"^^xsd:string ;
+    ex:color "Moccasin"^^xsd:string ;
+    ex:size "Large"^^xsd:string ;
+    ex:availability "in_stock"^^xsd:string ;
+    ex:internalId "60"^^xsd:string .
+
+ex:product55 a ex:Product ;
+    ex:index "55"^^xsd:integer ;
+    ex:name "Prime Headphones Scale Thermostat"^^xsd:string ;
+    ex:description "Exist forget whose operation."^^xsd:string ;
+    ex:brand "Hurst, Mckenzie and Pierce"^^xsd:string ;
+    ex:category "Team Sports"^^xsd:string ;
+    ex:price "163"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "929"^^xsd:integer ;
+    ex:ean "2773606439598"^^xsd:string ;
+    ex:color "LightSteelBlue"^^xsd:string ;
+    ex:size "12x18 in"^^xsd:string ;
+    ex:availability "discontinued"^^xsd:string ;
+    ex:internalId "93"^^xsd:string .
+
+ex:product56 a ex:Product ;
+    ex:index "56"^^xsd:integer ;
+    ex:name "Toaster Powerbank Lite"^^xsd:string ;
+    ex:description "Quickly player left."^^xsd:string ;
+    ex:brand "Jackson, Brown and Nguyen"^^xsd:string ;
+    ex:category "Fitness Equipment"^^xsd:string ;
+    ex:price "376"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "664"^^xsd:integer ;
+    ex:ean "6363882072064"^^xsd:string ;
+    ex:color "LightGreen"^^xsd:string ;
+    ex:size "8x10 in"^^xsd:string ;
+    ex:availability "discontinued"^^xsd:string ;
+    ex:internalId "42"^^xsd:string .
+
+ex:product57 a ex:Product ;
+    ex:index "57"^^xsd:integer ;
+    ex:name "Tablet Advanced Projector"^^xsd:string ;
+    ex:description "Specific north financial."^^xsd:string ;
+    ex:brand "Villarreal, Meyer and Hines"^^xsd:string ;
+    ex:category "Furniture"^^xsd:string ;
+    ex:price "735"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "363"^^xsd:integer ;
+    ex:ean "3787883064717"^^xsd:string ;
+    ex:color "PaleGreen"^^xsd:string ;
+    ex:size "8x10 in"^^xsd:string ;
+    ex:availability "discontinued"^^xsd:string ;
+    ex:internalId "31"^^xsd:string .
+
+ex:product58 a ex:Product ;
+    ex:index "58"^^xsd:integer ;
+    ex:name "Digital Toaster Fridge"^^xsd:string ;
+    ex:description "Manager similar outside."^^xsd:string ;
+    ex:brand "Stevens, Lopez and Fisher"^^xsd:string ;
+    ex:category "Laptops & Computers"^^xsd:string ;
+    ex:price "738"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "447"^^xsd:integer ;
+    ex:ean "7338464048502"^^xsd:string ;
+    ex:color "SandyBrown"^^xsd:string ;
+    ex:size "10x10 cm"^^xsd:string ;
+    ex:availability "in_stock"^^xsd:string ;
+    ex:internalId "23"^^xsd:string .
+
+ex:product59 a ex:Product ;
+    ex:index "59"^^xsd:integer ;
+    ex:name "Scooter Prime Cooker Air"^^xsd:string ;
+    ex:description "Become turn central."^^xsd:string ;
+    ex:brand "Torres-Welch"^^xsd:string ;
+    ex:category "Laptops & Computers"^^xsd:string ;
+    ex:price "388"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "820"^^xsd:integer ;
+    ex:ean "1564878336913"^^xsd:string ;
+    ex:color "MediumAquaMarine"^^xsd:string ;
+    ex:size "XXL"^^xsd:string ;
+    ex:availability "backorder"^^xsd:string ;
+    ex:internalId "1"^^xsd:string .
+
+ex:product60 a ex:Product ;
+    ex:index "60"^^xsd:integer ;
+    ex:name "Watch Air Router Tablet Powerbank"^^xsd:string ;
+    ex:description "Turn nothing gun."^^xsd:string ;
+    ex:brand "Allen Inc"^^xsd:string ;
+    ex:category "Men's Clothing"^^xsd:string ;
+    ex:price "966"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "931"^^xsd:integer ;
+    ex:ean "0000278765043"^^xsd:string ;
+    ex:color "Indigo"^^xsd:string ;
+    ex:size "12x18 in"^^xsd:string ;
+    ex:availability "pre_order"^^xsd:string ;
+    ex:internalId "14"^^xsd:string .
+
+ex:product61 a ex:Product ;
+    ex:index "61"^^xsd:integer ;
+    ex:name "Smart Toaster Mixer Scooter Lite"^^xsd:string ;
+    ex:description "Happen care reach."^^xsd:string ;
+    ex:brand "Benton, Hicks and Hudson"^^xsd:string ;
+    ex:category "Health & Wellness"^^xsd:string ;
+    ex:price "652"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "424"^^xsd:integer ;
+    ex:ean "8706382874072"^^xsd:string ;
+    ex:color "OliveDrab"^^xsd:string ;
+    ex:size "5x7 in"^^xsd:string ;
+    ex:availability "in_stock"^^xsd:string ;
+    ex:internalId "55"^^xsd:string .
+
+ex:product62 a ex:Product ;
+    ex:index "62"^^xsd:integer ;
+    ex:name "Webcam Max"^^xsd:string ;
+    ex:description "Thing perhaps size."^^xsd:string ;
+    ex:brand "Munoz, Shaw and Hernandez"^^xsd:string ;
+    ex:category "Shoes & Footwear"^^xsd:string ;
+    ex:price "127"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "111"^^xsd:integer ;
+    ex:ean "4488834362878"^^xsd:string ;
+    ex:color "LightGray"^^xsd:string ;
+    ex:size "50x70 cm"^^xsd:string ;
+    ex:availability "discontinued"^^xsd:string ;
+    ex:internalId "57"^^xsd:string .
+
+ex:product63 a ex:Product ;
+    ex:index "63"^^xsd:integer ;
+    ex:name "Powerbank Air"^^xsd:string ;
+    ex:description "Arm card scene particularly fear."^^xsd:string ;
+    ex:brand "Brown, Mcmahon and Castro"^^xsd:string ;
+    ex:category "Furniture"^^xsd:string ;
+    ex:price "595"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "172"^^xsd:integer ;
+    ex:ean "7787856826050"^^xsd:string ;
+    ex:color "LightSteelBlue"^^xsd:string ;
+    ex:size "Medium"^^xsd:string ;
+    ex:availability "discontinued"^^xsd:string ;
+    ex:internalId "64"^^xsd:string .
+
+ex:product64 a ex:Product ;
+    ex:index "64"^^xsd:integer ;
+    ex:name "Microphone Rechargeable Grill"^^xsd:string ;
+    ex:description "Show somebody economy."^^xsd:string ;
+    ex:brand "Sanchez-Kelley"^^xsd:string ;
+    ex:category "Cameras & Accessories"^^xsd:string ;
+    ex:price "188"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "815"^^xsd:integer ;
+    ex:ean "6384821892803"^^xsd:string ;
+    ex:color "LightSlateGray"^^xsd:string ;
+    ex:size "50x70 cm"^^xsd:string ;
+    ex:availability "backorder"^^xsd:string ;
+    ex:internalId "95"^^xsd:string .
+
+ex:product65 a ex:Product ;
+    ex:index "65"^^xsd:integer ;
+    ex:name "Clean Scanner"^^xsd:string ;
+    ex:description "Rise thought fish."^^xsd:string ;
+    ex:brand "Newman, Serrano and Henderson"^^xsd:string ;
+    ex:category "Beauty & Personal Care"^^xsd:string ;
+    ex:price "913"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "764"^^xsd:integer ;
+    ex:ean "6336634234835"^^xsd:string ;
+    ex:color "OliveDrab"^^xsd:string ;
+    ex:size "12x18 in"^^xsd:string ;
+    ex:availability "pre_order"^^xsd:string ;
+    ex:internalId "69"^^xsd:string .
+
+ex:product66 a ex:Product ;
+    ex:index "66"^^xsd:integer ;
+    ex:name "Router Advanced Vacuum"^^xsd:string ;
+    ex:description "Network control audience."^^xsd:string ;
+    ex:brand "Gross-Evans"^^xsd:string ;
+    ex:category "Furniture"^^xsd:string ;
+    ex:price "887"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "226"^^xsd:integer ;
+    ex:ean "2808787069898"^^xsd:string ;
+    ex:color "BlanchedAlmond"^^xsd:string ;
+    ex:size "10x10 cm"^^xsd:string ;
+    ex:availability "backorder"^^xsd:string ;
+    ex:internalId "77"^^xsd:string .
+
+ex:product67 a ex:Product ;
+    ex:index "67"^^xsd:integer ;
+    ex:name "Compact Cooler"^^xsd:string ;
+    ex:description "Nearly speech picture."^^xsd:string ;
+    ex:brand "Schmidt, Anthony and Foster"^^xsd:string ;
+    ex:category "Men's Clothing"^^xsd:string ;
+    ex:price "608"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "606"^^xsd:integer ;
+    ex:ean "0000234632383"^^xsd:string ;
+    ex:color "PeachPuff"^^xsd:string ;
+    ex:size "M"^^xsd:string ;
+    ex:availability "in_stock"^^xsd:string ;
+    ex:internalId "92"^^xsd:string .
+
+ex:product68 a ex:Product ;
+    ex:index "68"^^xsd:integer ;
+    ex:name "Advanced Iron Prime"^^xsd:string ;
+    ex:description "Attorney indicate might."^^xsd:string ;
+    ex:brand "Mcintosh, Marshall and Richards"^^xsd:string ;
+    ex:category "Haircare"^^xsd:string ;
+    ex:price "997"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "582"^^xsd:integer ;
+    ex:ean "8874886406093"^^xsd:string ;
+    ex:color "MediumOrchid"^^xsd:string ;
+    ex:size "Large"^^xsd:string ;
+    ex:availability "pre_order"^^xsd:string ;
+    ex:internalId "49"^^xsd:string .
+
+ex:product69 a ex:Product ;
+    ex:index "69"^^xsd:integer ;
+    ex:name "Oven Lite Digital Router Toaster"^^xsd:string ;
+    ex:description "Dream ago west."^^xsd:string ;
+    ex:brand "Holland LLC"^^xsd:string ;
+    ex:category "Makeup"^^xsd:string ;
+    ex:price "436"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "436"^^xsd:integer ;
+    ex:ean "4678287072607"^^xsd:string ;
+    ex:color "Olive"^^xsd:string ;
+    ex:size "Extra Large"^^xsd:string ;
+    ex:availability "in_stock"^^xsd:string ;
+    ex:internalId "97"^^xsd:string .
+
+ex:product70 a ex:Product ;
+    ex:index "70"^^xsd:integer ;
+    ex:name "Lite Camera Toaster Thermostat Heater"^^xsd:string ;
+    ex:description "Collection reach without."^^xsd:string ;
+    ex:brand "Wilkerson, Mann and Carter"^^xsd:string ;
+    ex:category "Books & Stationery"^^xsd:string ;
+    ex:price "387"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "752"^^xsd:integer ;
+    ex:ean "0861386308378"^^xsd:string ;
+    ex:color "LightSteelBlue"^^xsd:string ;
+    ex:size "Medium"^^xsd:string ;
+    ex:availability "in_stock"^^xsd:string ;
+    ex:internalId "80"^^xsd:string .
+
+ex:product71 a ex:Product ;
+    ex:index "71"^^xsd:integer ;
+    ex:name "Lite Speakerphone Lamp Wireless Fridge"^^xsd:string ;
+    ex:description "Model former through quickly."^^xsd:string ;
+    ex:brand "Berry-Marquez"^^xsd:string ;
+    ex:category "Cameras & Accessories"^^xsd:string ;
+    ex:price "988"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "867"^^xsd:integer ;
+    ex:ean "6878783874899"^^xsd:string ;
+    ex:color "DarkGreen"^^xsd:string ;
+    ex:size "30x40 cm"^^xsd:string ;
+    ex:availability "pre_order"^^xsd:string ;
+    ex:internalId "12"^^xsd:string .
+
+ex:product72 a ex:Product ;
+    ex:index "72"^^xsd:integer ;
+    ex:name "Vacuum Max Prime Lite Eco"^^xsd:string ;
+    ex:description "System bill nor."^^xsd:string ;
+    ex:brand "Ramos-Williams"^^xsd:string ;
+    ex:category "Makeup"^^xsd:string ;
+    ex:price "691"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "888"^^xsd:integer ;
+    ex:ean "1738384266903"^^xsd:string ;
+    ex:color "DodgerBlue"^^xsd:string ;
+    ex:size "L"^^xsd:string ;
+    ex:availability "in_stock"^^xsd:string ;
+    ex:internalId "74"^^xsd:string .
+
+ex:product73 a ex:Product ;
+    ex:index "73"^^xsd:integer ;
+    ex:name "Wireless Oven Webcam Cooler"^^xsd:string ;
+    ex:description "Describe someone size."^^xsd:string ;
+    ex:brand "Anderson Inc"^^xsd:string ;
+    ex:category "Skincare"^^xsd:string ;
+    ex:price "308"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "531"^^xsd:integer ;
+    ex:ean "1388833260889"^^xsd:string ;
+    ex:color "LightSlateGray"^^xsd:string ;
+    ex:size "10x10 cm"^^xsd:string ;
+    ex:availability "pre_order"^^xsd:string ;
+    ex:internalId "67"^^xsd:string .
+
+ex:product74 a ex:Product ;
+    ex:index "74"^^xsd:integer ;
+    ex:name "Scooter Lite"^^xsd:string ;
+    ex:description "Down present success reason."^^xsd:string ;
+    ex:brand "Jimenez, Wright and Smith"^^xsd:string ;
+    ex:category "Books & Stationery"^^xsd:string ;
+    ex:price "278"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "959"^^xsd:integer ;
+    ex:ean "2368387634063"^^xsd:string ;
+    ex:color "LightSlateGray"^^xsd:string ;
+    ex:size "Extra Large"^^xsd:string ;
+    ex:availability "limited_stock"^^xsd:string ;
+    ex:internalId "14"^^xsd:string .
+
+ex:product75 a ex:Product ;
+    ex:index "75"^^xsd:integer ;
+    ex:name "Wireless Refrigerator Monitor Fan Cooler"^^xsd:string ;
+    ex:description "Wonder range energy."^^xsd:string ;
+    ex:brand "Ingram Ltd"^^xsd:string ;
+    ex:category "Haircare"^^xsd:string ;
+    ex:price "471"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "677"^^xsd:integer ;
+    ex:ean "3408801377618"^^xsd:string ;
+    ex:color "LightSalmon"^^xsd:string ;
+    ex:size "8x10 in"^^xsd:string ;
+    ex:availability "backorder"^^xsd:string ;
+    ex:internalId "92"^^xsd:string .
+
+ex:product76 a ex:Product ;
+    ex:index "76"^^xsd:integer ;
+    ex:name "Soundbar Silent Air"^^xsd:string ;
+    ex:description "Country success ahead."^^xsd:string ;
+    ex:brand "Beck-Watson"^^xsd:string ;
+    ex:category "Shoes & Footwear"^^xsd:string ;
+    ex:price "346"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "338"^^xsd:integer ;
+    ex:ean "6178086899832"^^xsd:string ;
+    ex:color "MidnightBlue"^^xsd:string ;
+    ex:size "XXL"^^xsd:string ;
+    ex:availability "discontinued"^^xsd:string ;
+    ex:internalId "97"^^xsd:string .
+
+ex:product77 a ex:Product ;
+    ex:index "77"^^xsd:integer ;
+    ex:name "Compact Scooter"^^xsd:string ;
+    ex:description "Whose cold himself."^^xsd:string ;
+    ex:brand "Watson, Obrien and Martinez"^^xsd:string ;
+    ex:category "Furniture"^^xsd:string ;
+    ex:price "756"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "584"^^xsd:integer ;
+    ex:ean "6638832668072"^^xsd:string ;
+    ex:color "MediumAquaMarine"^^xsd:string ;
+    ex:size "Small"^^xsd:string ;
+    ex:availability "pre_order"^^xsd:string ;
+    ex:internalId "66"^^xsd:string .
+
+ex:product78 a ex:Product ;
+    ex:index "78"^^xsd:integer ;
+    ex:name "Digital Powerbank Max"^^xsd:string ;
+    ex:description "Join care southern."^^xsd:string ;
+    ex:brand "Castillo-Mckenzie"^^xsd:string ;
+    ex:category "Furniture"^^xsd:string ;
+    ex:price "639"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "531"^^xsd:integer ;
+    ex:ean "0000288703748"^^xsd:string ;
+    ex:color "PeachPuff"^^xsd:string ;
+    ex:size "12x18 in"^^xsd:string ;
+    ex:availability "pre_order"^^xsd:string ;
+    ex:internalId "70"^^xsd:string .
+
+ex:product79 a ex:Product ;
+    ex:index "79"^^xsd:integer ;
+    ex:name "Max Toaster Air Sense"^^xsd:string ;
+    ex:description "Fund thought evening."^^xsd:string ;
+    ex:brand "Garrett-Ortiz"^^xsd:string ;
+    ex:category "Automotive"^^xsd:string ;
+    ex:price "843"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "823"^^xsd:integer ;
+    ex:ean "3736808732383"^^xsd:string ;
+    ex:color "DeepSkyBlue"^^xsd:string ;
+    ex:size "Medium"^^xsd:string ;
+    ex:availability "discontinued"^^xsd:string ;
+    ex:internalId "11"^^xsd:string .
+
+ex:product80 a ex:Product ;
+    ex:index "80"^^xsd:integer ;
+    ex:name "Rechargeable Cooker Monitor Air"^^xsd:string ;
+    ex:description "Perhaps throughout moment."^^xsd:string ;
+    ex:brand "Williams LLC"^^xsd:string ;
+    ex:category "Team Sports"^^xsd:string ;
+    ex:price "735"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "662"^^xsd:integer ;
+    ex:ean "8726877864604"^^xsd:string ;
+    ex:color "CadetBlue"^^xsd:string ;
+    ex:size "12x18 in"^^xsd:string ;
+    ex:availability "backorder"^^xsd:string ;
+    ex:internalId "23"^^xsd:string .
+
+ex:product81 a ex:Product ;
+    ex:index "81"^^xsd:integer ;
+    ex:name "Toaster Blender"^^xsd:string ;
+    ex:description "Bring remember energy fear."^^xsd:string ;
+    ex:brand "Foster-Brown"^^xsd:string ;
+    ex:category "Skincare"^^xsd:string ;
+    ex:price "766"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "637"^^xsd:integer ;
+    ex:ean "8874866046933"^^xsd:string ;
+    ex:color "DarkKhaki"^^xsd:string ;
+    ex:size "30x40 cm"^^xsd:string ;
+    ex:availability "discontinued"^^xsd:string ;
+    ex:internalId "36"^^xsd:string .
+
+ex:product82 a ex:Product ;
+    ex:index "82"^^xsd:integer ;
+    ex:name "Eco Soundbar Treadmill"^^xsd:string ;
+    ex:description "Material inside difficult."^^xsd:string ;
+    ex:brand "Conner, Howell and White"^^xsd:string ;
+    ex:category "Office Supplies"^^xsd:string ;
+    ex:price "826"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "925"^^xsd:integer ;
+    ex:ean "7188387063682"^^xsd:string ;
+    ex:color "DarkOrange"^^xsd:string ;
+    ex:size "5x7 in"^^xsd:string ;
+    ex:availability "limited_stock"^^xsd:string ;
+    ex:internalId "7"^^xsd:string .
+
+ex:product83 a ex:Product ;
+    ex:index "83"^^xsd:integer ;
+    ex:name "Lite Mouse"^^xsd:string ;
+    ex:description "Once month pretty."^^xsd:string ;
+    ex:brand "Brooks and Sons"^^xsd:string ;
+    ex:category "Office Supplies"^^xsd:string ;
+    ex:price "103"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "208"^^xsd:integer ;
+    ex:ean "5328785590239"^^xsd:string ;
+    ex:color "Chocolate"^^xsd:string ;
+    ex:size "Extra Large"^^xsd:string ;
+    ex:availability "backorder"^^xsd:string ;
+    ex:internalId "72"^^xsd:string .
+
+ex:product84 a ex:Product ;
+    ex:index "84"^^xsd:integer ;
+    ex:name "Wireless Fan Thermostat Max Automatic Max"^^xsd:string ;
+    ex:description "Design price for especially section college over green."^^xsd:string ;
+    ex:brand "Kaiser-Banks"^^xsd:string ;
+    ex:category "Books & Stationery"^^xsd:string ;
+    ex:price "423"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "759"^^xsd:integer ;
+    ex:ean "1396411470228"^^xsd:string ;
+    ex:color "MidnightBlue"^^xsd:string ;
+    ex:size "5x7 in"^^xsd:string ;
+    ex:availability "in_stock"^^xsd:string ;
+    ex:internalId "81"^^xsd:string .
+
+ex:product85 a ex:Product ;
+    ex:index "85"^^xsd:integer ;
+    ex:name "Fast Keyboard"^^xsd:string ;
+    ex:description "Success other institution fear."^^xsd:string ;
+    ex:brand "Lewis Ltd"^^xsd:string ;
+    ex:category "Camping & Hiking"^^xsd:string ;
+    ex:price "998"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "10"^^xsd:integer ;
+    ex:ean "3163238295239"^^xsd:string ;
+    ex:color "Cyan"^^xsd:string ;
+    ex:size "50x70 cm"^^xsd:string ;
+    ex:availability "limited_stock"^^xsd:string ;
+    ex:internalId "64"^^xsd:string .
+
+ex:product86 a ex:Product ;
+    ex:index "86"^^xsd:integer ;
+    ex:name "Ultra Mixer Toaster Toaster Smart"^^xsd:string ;
+    ex:description "Much guess have pattern southern true hair miss."^^xsd:string ;
+    ex:brand "Galloway and Sons"^^xsd:string ;
+    ex:category "Women's Clothing"^^xsd:string ;
+    ex:price "342"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "221"^^xsd:integer ;
+    ex:ean "4862330962177"^^xsd:string ;
+    ex:color "Tomato"^^xsd:string ;
+    ex:size "S"^^xsd:string ;
+    ex:availability "pre_order"^^xsd:string ;
+    ex:internalId "88"^^xsd:string .
+
+ex:product87 a ex:Product ;
+    ex:index "87"^^xsd:integer ;
+    ex:name "Silent Speakerphone Scanner Monitor"^^xsd:string ;
+    ex:description "Quality yet significant lawyer face field yet realize."^^xsd:string ;
+    ex:brand "Cowan Inc"^^xsd:string ;
+    ex:category "Fragrances"^^xsd:string ;
+    ex:price "593"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "580"^^xsd:integer ;
+    ex:ean "1710131812265"^^xsd:string ;
+    ex:color "Navy"^^xsd:string ;
+    ex:size "XXL"^^xsd:string ;
+    ex:availability "discontinued"^^xsd:string ;
+    ex:internalId "20"^^xsd:string .
+
+ex:product88 a ex:Product ;
+    ex:index "88"^^xsd:integer ;
+    ex:name "Silent Scanner Monitor Treadmill"^^xsd:string ;
+    ex:description "Do interesting suggest agreement range admit rule."^^xsd:string ;
+    ex:brand "Nichols, Howe and Miller"^^xsd:string ;
+    ex:category "Health & Wellness"^^xsd:string ;
+    ex:price "30"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "728"^^xsd:integer ;
+    ex:ean "1287056757693"^^xsd:string ;
+    ex:color "Wheat"^^xsd:string ;
+    ex:size "10x10 cm"^^xsd:string ;
+    ex:availability "pre_order"^^xsd:string ;
+    ex:internalId "60"^^xsd:string .
+
+ex:product89 a ex:Product ;
+    ex:index "89"^^xsd:integer ;
+    ex:name "Fast Vacuum Cooler"^^xsd:string ;
+    ex:description "Explain six firm recent rock skin."^^xsd:string ;
+    ex:brand "Blair-Russell"^^xsd:string ;
+    ex:category "Sports & Outdoors"^^xsd:string ;
+    ex:price "307"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "320"^^xsd:integer ;
+    ex:ean "4874329354658"^^xsd:string ;
+    ex:color "LightSalmon"^^xsd:string ;
+    ex:size "L"^^xsd:string ;
+    ex:availability "limited_stock"^^xsd:string ;
+    ex:internalId "5"^^xsd:string .
+
+ex:product90 a ex:Product ;
+    ex:index "90"^^xsd:integer ;
+    ex:name "Digital Trimmer"^^xsd:string ;
+    ex:description "Ago floor nice member wait."^^xsd:string ;
+    ex:brand "Christian-Tanner"^^xsd:string ;
+    ex:category "Laptops & Computers"^^xsd:string ;
+    ex:price "541"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "488"^^xsd:integer ;
+    ex:ean "4147810179628"^^xsd:string ;
+    ex:color "SteelBlue"^^xsd:string ;
+    ex:size "M"^^xsd:string ;
+    ex:availability "pre_order"^^xsd:string ;
+    ex:internalId "31"^^xsd:string .
+
+ex:product91 a ex:Product ;
+    ex:index "91"^^xsd:integer ;
+    ex:name "Automatic Trimmer Sense"^^xsd:string ;
+    ex:description "Much table ground information news senior."^^xsd:string ;
+    ex:brand "Harrington-Valentine"^^xsd:string ;
+    ex:category "Kitchen Appliances"^^xsd:string ;
+    ex:price "405"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "950"^^xsd:integer ;
+    ex:ean "0000524638185"^^xsd:string ;
+    ex:color "SlateGray"^^xsd:string ;
+    ex:size "8x10 in"^^xsd:string ;
+    ex:availability "in_stock"^^xsd:string ;
+    ex:internalId "85"^^xsd:string .
+
+ex:product92 a ex:Product ;
+    ex:index "92"^^xsd:integer ;
+    ex:name "Portable Scooter Wireless Digital"^^xsd:string ;
+    ex:description "Thousand various evidence."^^xsd:string ;
+    ex:brand "Bauer Inc"^^xsd:string ;
+    ex:category "Cameras & Accessories"^^xsd:string ;
+    ex:price "519"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "495"^^xsd:integer ;
+    ex:ean "4564280934296"^^xsd:string ;
+    ex:color "DeepSkyBlue"^^xsd:string ;
+    ex:size "Large"^^xsd:string ;
+    ex:availability "in_stock"^^xsd:string ;
+    ex:internalId "36"^^xsd:string .
+
+ex:product93 a ex:Product ;
+    ex:index "93"^^xsd:integer ;
+    ex:name "Fridge Cooker"^^xsd:string ;
+    ex:description "Try better loss pretty special."^^xsd:string ;
+    ex:brand "Jackson Group"^^xsd:string ;
+    ex:category "Furniture"^^xsd:string ;
+    ex:price "393"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "499"^^xsd:integer ;
+    ex:ean "1861389468671"^^xsd:string ;
+    ex:color "Black"^^xsd:string ;
+    ex:size "Small"^^xsd:string ;
+    ex:availability "in_stock"^^xsd:string ;
+    ex:internalId "80"^^xsd:string .
+
+ex:product94 a ex:Product ;
+    ex:index "94"^^xsd:integer ;
+    ex:name "Scanner"^^xsd:string ;
+    ex:description "Draw material quickly most."^^xsd:string ;
+    ex:brand "Wang, Ayala and Bowen"^^xsd:string ;
+    ex:category "Cleaning Supplies"^^xsd:string ;
+    ex:price "472"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "63"^^xsd:integer ;
+    ex:ean "7794860625802"^^xsd:string ;
+    ex:color "ForestGreen"^^xsd:string ;
+    ex:size "12x18 in"^^xsd:string ;
+    ex:availability "backorder"^^xsd:string ;
+    ex:internalId "8"^^xsd:string .
+
+ex:product95 a ex:Product ;
+    ex:index "95"^^xsd:integer ;
+    ex:name "Ultra Radio Radio"^^xsd:string ;
+    ex:description "Shoulder red boy away if."^^xsd:string ;
+    ex:brand "Maldonado-Ritter"^^xsd:string ;
+    ex:category "Haircare"^^xsd:string ;
+    ex:price "382"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "639"^^xsd:integer ;
+    ex:ean "3611080124547"^^xsd:string ;
+    ex:color "Aquamarine"^^xsd:string ;
+    ex:size "12x18 in"^^xsd:string ;
+    ex:availability "pre_order"^^xsd:string ;
+    ex:internalId "48"^^xsd:string .
+
+ex:product96 a ex:Product ;
+    ex:index "96"^^xsd:integer ;
+    ex:name "Router"^^xsd:string ;
+    ex:description "Investment everything story buy."^^xsd:string ;
+    ex:brand "Atkinson Inc"^^xsd:string ;
+    ex:category "Laptops & Computers"^^xsd:string ;
+    ex:price "375"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "703"^^xsd:integer ;
+    ex:ean "3330396409604"^^xsd:string ;
+    ex:color "Gainsboro"^^xsd:string ;
+    ex:size "8x10 in"^^xsd:string ;
+    ex:availability "limited_stock"^^xsd:string ;
+    ex:internalId "55"^^xsd:string .
+
+ex:product97 a ex:Product ;
+    ex:index "97"^^xsd:integer ;
+    ex:name "Fast Thermostat Microphone Scooter"^^xsd:string ;
+    ex:description "Nature notice themselves news."^^xsd:string ;
+    ex:brand "Shea Ltd"^^xsd:string ;
+    ex:category "Beauty & Personal Care"^^xsd:string ;
+    ex:price "289"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "727"^^xsd:integer ;
+    ex:ean "9265397743935"^^xsd:string ;
+    ex:color "White"^^xsd:string ;
+    ex:size "Extra Large"^^xsd:string ;
+    ex:availability "backorder"^^xsd:string ;
+    ex:internalId "25"^^xsd:string .
+
+ex:product98 a ex:Product ;
+    ex:index "98"^^xsd:integer ;
+    ex:name "Eco Heater Toaster Stove Silent Sense"^^xsd:string ;
+    ex:description "Understand still or summer rule."^^xsd:string ;
+    ex:brand "West Ltd"^^xsd:string ;
+    ex:category "Cleaning Supplies"^^xsd:string ;
+    ex:price "232"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "998"^^xsd:integer ;
+    ex:ean "5505866454530"^^xsd:string ;
+    ex:color "OldLace"^^xsd:string ;
+    ex:size "Small"^^xsd:string ;
+    ex:availability "limited_stock"^^xsd:string ;
+    ex:internalId "20"^^xsd:string .
+
+ex:product99 a ex:Product ;
+    ex:index "99"^^xsd:integer ;
+    ex:name "Clean Blender Scale Lite"^^xsd:string ;
+    ex:description "Final art some push."^^xsd:string ;
+    ex:brand "Bell, Gamble and Barrett"^^xsd:string ;
+    ex:category "Camping & Hiking"^^xsd:string ;
+    ex:price "241"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "391"^^xsd:integer ;
+    ex:ean "3893594435450"^^xsd:string ;
+    ex:color "Aquamarine"^^xsd:string ;
+    ex:size "5x7 in"^^xsd:string ;
+    ex:availability "limited_stock"^^xsd:string ;
+    ex:internalId "5"^^xsd:string .
+
+ex:product100 a ex:Product ;
+    ex:index "100"^^xsd:integer ;
+    ex:name "Smart Lamp"^^xsd:string ;
+    ex:description "However public major baby."^^xsd:string ;
+    ex:brand "Hebert, Hughes and Trujillo"^^xsd:string ;
+    ex:category "Bedding & Bath"^^xsd:string ;
+    ex:price "71"^^xsd:decimal ;
+    ex:currency "USD"^^xsd:string ;
+    ex:stock "518"^^xsd:integer ;
+    ex:ean "8264263605712"^^xsd:string ;
+    ex:color "Brown"^^xsd:string ;
+    ex:size "Medium"^^xsd:string ;
+    ex:availability "limited_stock"^^xsd:string ;
+    ex:internalId "3"^^xsd:string .
