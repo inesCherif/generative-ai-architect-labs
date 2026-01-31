@@ -1,0 +1,51 @@
+Text Embeddings: Converting Words to Numbers
+
+Embeddings are numerical representations of text that capture semantic meaning. They allow computers to understand that "king" is related to "queen" and "royal" even though the words are different.
+
+What Are Embeddings?
+
+An embedding is a vector (a list of numbers) that represents a piece of text. For example:
+
+- "dog" might be: [0.2, 0.8, -0.3, 0.5, ...]
+- "puppy" might be: [0.25, 0.82, -0.28, 0.48, ...] (very similar!)
+- "car" might be: [-0.6, 0.1, 0.9, -0.2, ...] (very different)
+
+Popular Embedding Models:
+
+1. OpenAI Embeddings:
+   - text-embedding-ada-002: Current standard, 1536 dimensions
+   - High quality, requires API calls
+
+2. Sentence Transformers:
+   - all-MiniLM-L6-v2: Fast and lightweight (384 dimensions)
+   - all-mpnet-base-v2: More accurate (768 dimensions)
+   - Can run locally without API calls
+
+3. Hugging Face Models:
+   - Various models for different languages and domains
+   - Open source and customizable
+
+How Embeddings Enable Semantic Search:
+
+Traditional keyword search looks for exact word matches. Embedding-based search understands meaning:
+
+Query: "What is machine learning?"
+
+- Traditional: Finds documents with words "machine" and "learning"
+- Semantic: Finds documents about AI, neural networks, algorithms (related concepts!)
+
+Creating Embeddings for RAG:
+
+1. Choose an embedding model
+2. Process your documents through the model
+3. Store the resulting vectors in a vector database
+4. When a query comes in, embed it with the same model
+5. Find the most similar document vectors
+6. Return those documents to augment the LLM
+
+Embedding Dimensions:
+
+- Higher dimensions (1536): More information, better accuracy, more storage
+- Lower dimensions (384): Faster, less storage, still effective for most use cases
+
+The key principle: Similar meanings produce similar vectors, enabling powerful semantic search capabilities in RAG systems.

@@ -1,0 +1,25 @@
+# Core RAG Components
+langchain==0.1.0
+langchain-community==0.0.10
+langchain-openai==0.0.2
+
+# Vector Database (we'll use FAISS - free and simple)
+faiss-cpu
+
+# Document Processing
+pypdf==3.17.4
+python-dotenv==1.0.0
+
+# OpenAI (for the LLM)
+openai==1.6.1
+
+# For embeddings (converting text to numbers)
+sentence-transformers==2.2.2
+
+# Utilities
+numpy==1.24.3
+tiktoken==0.5.2
+
+# For visualization and tracking
+matplotlib==3.8.2
+pandas==2.1.4

@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RAG Architecture Diagram</title>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f5f5f5;
+      }
+      h1 {
+        color: #333;
+        text-align: center;
+      }
+      .diagram-container {
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        margin: 20px 0;
+      }
+      .info-box {
+        background: #e3f2fd;
+        padding: 15px;
+        border-left: 4px solid #2196f3;
+        margin: 20px 0;
+        border-radius: 5px;
+      }
+      .legend {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 10px;
+        margin: 20px 0;
+      }
+      .legend-item {
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>🧠 GenAI-RAG Architecture</h1>
+
+    <div class="info-box">
+      <h3>💡 What is RAG?</h3>
+      <p>
+        <strong>Retrieval-Augmented Generation</strong> = Smart AI that looks up
+        facts before answering!
+      </p>
+      <ul>
+        <li>📚 Stores your documents in a searchable database</li>
+        <li>🔍 Finds relevant information when you ask a question</li>
+        <li>🤖 Uses AI to generate accurate answers based on your data</li>
+      </ul>
+    </div>
+
+    <div class="diagram-container">
+      <div class="mermaid">
+        graph TD %% User Interface Layer User[👤 User] -->|Ask Question| UI[🖥️
+        Chat Interface] %% API Gateway Layer UI -->|HTTP Request| API[🚪 API
+        Gateway] %% RAG Pipeline API --> RAG[🧠 RAG Engine] %% Retrieval Layer
+        RAG -->|1. Convert to vector| Embed[📊 Embedding Model] Embed -->|2.
+        Search similar| Vector[💾 Vector DB FAISS] %% Optional Knowledge Graph
+        RAG -.->|Optional| Graph[🕸️ Knowledge Graph] %% LLM Layer Vector -->|3.
+        Top docs| Context[📚 Context Builder] Graph -.->|Related data| Context
+        Context -->|4. Question + Docs| LLM[🤖 OpenAI GPT] %% Response Layer LLM
+        -->|5. Answer| Output[📤 Response] Output -->|Display| UI %% Monitoring
+        RAG -.->|Logs| Monitor[📈 Monitoring] LLM -.->|Metrics| Monitor %%
+        Styling classDef userLayer fill:#e1f5ff,stroke:#01579b,stroke-width:3px
+        classDef apiLayer fill:#fff9c4,stroke:#f57f17,stroke-width:3px classDef
+        retrievalLayer fill:#f3e5f5,stroke:#4a148c,stroke-width:3px classDef
+        llmLayer fill:#e8f5e9,stroke:#1b5e20,stroke-width:3px classDef
+        monitorLayer fill:#fce4ec,stroke:#880e4f,stroke-width:2px class User,UI
+        userLayer class API apiLayer class RAG,Embed,Vector,Graph,Context
+        retrievalLayer class LLM,Output llmLayer class Monitor monitorLayer
+      </div>
+    </div>
+
+    <h2>📊 Component Legend</h2>
+    <div class="legend">
+      <div
+        class="legend-item"
+        style="background: #e1f5ff; border-left: 4px solid #01579b"
+      >
+        <strong>🔵 User Layer</strong><br />
+        Interface & User
+      </div>
+      <div
+        class="legend-item"
+        style="background: #fff9c4; border-left: 4px solid #f57f17"
+      >
+        <strong>🟡 API Layer</strong><br />
+        Request Routing
+      </div>
+      <div
+        class="legend-item"
+        style="background: #f3e5f5; border-left: 4px solid #4a148c"
+      >
+        <strong>🟣 Retrieval Layer</strong><br />
+        Document Search
+      </div>
+      <div
+        class="legend-item"
+        style="background: #e8f5e9; border-left: 4px solid #1b5e20"
+      >
+        <strong>🟢 LLM Layer</strong><br />
+        AI Generation
+      </div>
+    </div>
+
+    <div class="info-box">
+      <h3>🔄 How It Works (5 Steps)</h3>
+      <ol>
+        <li>
+          <strong>Question Input</strong>: User asks "What is machine learning?"
+        </li>
+        <li>
+          <strong>Vectorization</strong>: Convert question to numbers [0.23,
+          0.87, -0.45...]
+        </li>
+        <li>
+          <strong>Search</strong>: Find top 3 most similar documents in database
+        </li>
+        <li>
+          <strong>Context Building</strong>: Combine question + retrieved
+          documents
+        </li>
+        <li>
+          <strong>Generation</strong>: AI reads docs and generates smart answer
+        </li>
+      </ol>
+    </div>
+
+    <script>
+      mermaid.initialize({
+        startOnLoad: true,
+        theme: "default",
+        flowchart: {
+          useMaxWidth: true,
+          htmlLabels: true,
+          curve: "basis",
+        },
+      });
+    </script>
+  </body>
+</html>

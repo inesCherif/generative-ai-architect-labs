@@ -1,0 +1,33 @@
+Understanding Vector Databases
+
+A vector database is a specialized type of database designed to store, index, and search high-dimensional vectors efficiently. These vectors are numerical representations of data, such as text, images, or audio, created through embedding models.
+
+Key Concepts:
+
+Embeddings: Machine learning models convert unstructured data (like text) into fixed-length vectors of numbers. Similar content produces similar vectors.
+
+Vector Similarity: Vector databases use mathematical operations like cosine similarity or Euclidean distance to find similar vectors quickly.
+
+Popular Vector Databases:
+
+1. FAISS (Facebook AI Similarity Search): An open-source library optimized for similarity search, great for local development.
+
+2. Pinecone: A fully managed vector database service with excellent scalability.
+
+3. Weaviate: An open-source vector database with built-in vectorization.
+
+4. Milvus: Open-source vector database designed for scalability and high performance.
+
+5. Chroma: Simple, open-source embedding database perfect for prototyping.
+
+How Vector Databases Work in RAG:
+
+1. Indexing Phase: Documents are converted to embeddings and stored in the vector database.
+
+2. Query Phase: User questions are also converted to embeddings.
+
+3. Similarity Search: The database finds the most similar document embeddings to the query embedding.
+
+4. Retrieval: The top-k most similar documents are returned to augment the LLM prompt.
+
+Vector databases are essential for building modern AI applications, enabling semantic search capabilities that go beyond simple keyword matching.

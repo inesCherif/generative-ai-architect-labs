@@ -1,0 +1,36 @@
+Large Language Models (LLMs) Explained
+
+Large Language Models are AI systems trained on vast amounts of text data to understand and generate human-like text. They form the foundation of modern conversational AI and text generation applications.
+
+Popular LLMs:
+
+1. OpenAI GPT Series:
+   - GPT-3.5: Fast and cost-effective for most applications
+   - GPT-4: More capable, better reasoning, multimodal (text and images)
+   - GPT-4 Turbo: Optimized for speed and lower costs
+
+2. Anthropic Claude:
+   - Claude 3 Opus: Most capable model
+   - Claude 3 Sonnet: Balanced performance and speed
+   - Claude 3 Haiku: Fastest, most compact
+
+3. Open Source Models:
+   - Llama 2 (Meta): Free for research and commercial use
+   - Mistral: High-performance open models
+   - Falcon: Efficient and powerful
+
+How LLMs Work:
+
+- Training: Models learn patterns from billions of text examples.
+- Tokenization: Text is broken into smaller units (tokens) for processing.
+- Context Window: The amount of text the model can consider at once (e.g., 4K, 8K, 32K tokens).
+- Generation: Models predict the next most likely token, creating coherent text.
+
+LLM Limitations:
+
+- Knowledge Cutoff: Training data has a cutoff date, so models lack recent information.
+- Hallucinations: Models may generate plausible but incorrect information.
+- No Real Understanding: LLMs pattern-match; they don't truly "understand" content.
+- Context Limits: Can only process a limited amount of text at once.
+
+This is why RAG is so important - it addresses many of these limitations by providing current, verifiable information from external sources.
