@@ -1,0 +1,242 @@
+# Healthcare Ontology - Knowledge about Drugs, Diseases, and Treatments
+# Format: Turtle (.ttl) - A human-readable format for RDF data
+
+# ========================================
+# PREFIXES - Shortcuts for namespaces
+# ========================================
+
+@prefix ex: <http://example.org/healthcare#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ========================================
+# CLASS DEFINITIONS
+# ========================================
+
+# Define what types of things exist in our domain
+
+ex:Drug a rdfs:Class ;
+    rdfs:label "Drug" ;
+    rdfs:comment "A pharmaceutical substance used to treat diseases" .
+
+ex:Disease a rdfs:Class ;
+    rdfs:label "Disease" ;
+    rdfs:comment "A medical condition affecting the body" .
+
+ex:Symptom a rdfs:Class ;
+    rdfs:label "Symptom" ;
+    rdfs:comment "A physical or mental feature indicating a condition" .
+
+ex:MechanismOfAction a rdfs:Class ;
+    rdfs:label "Mechanism of Action" ;
+    rdfs:comment "The biological process by which a drug produces its effect" .
+
+ex:Treatment a rdfs:Class ;
+    rdfs:label "Treatment" ;
+    rdfs:comment "A medical intervention to cure or alleviate a disease" .
+
+# ========================================
+# PROPERTY DEFINITIONS (Relationships)
+# ========================================
+
+# How different things relate to each other
+
+ex:treats a rdf:Property ;
+    rdfs:label "treats" ;
+    rdfs:comment "Drug treats a Disease" ;
+    rdfs:domain ex:Drug ;
+    rdfs:range ex:Disease .
+
+ex:hasMechanism a rdf:Property ;
+    rdfs:label "has mechanism" ;
+    rdfs:comment "Drug works through a Mechanism of Action" ;
+    rdfs:domain ex:Drug ;
+    rdfs:range ex:MechanismOfAction .
+
+ex:hasSymptom a rdf:Property ;
+    rdfs:label "has symptom" ;
+    rdfs:comment "Disease manifests as Symptom" ;
+    rdfs:domain ex:Disease ;
+    rdfs:range ex:Symptom .
+
+ex:causes a rdf:Property ;
+    rdfs:label "causes" ;
+    rdfs:comment "Disease causes a Symptom" ;
+    rdfs:domain ex:Disease ;
+    rdfs:range ex:Symptom .
+
+ex:alleviates a rdf:Property ;
+    rdfs:label "alleviates" ;
+    rdfs:comment "Drug alleviates a Symptom" ;
+    rdfs:domain ex:Drug ;
+    rdfs:range ex:Symptom .
+
+ex:hasActiveIngredient a rdf:Property ;
+    rdfs:label "has active ingredient" ;
+    rdfs:comment "Drug contains an active substance" ;
+    rdfs:domain ex:Drug .
+
+ex:hasDosage a rdf:Property ;
+    rdfs:label "has dosage" ;
+    rdfs:comment "Recommended dosage for a drug" ;
+    rdfs:domain ex:Drug .
+
+# ========================================
+# INDIVIDUAL INSTANCES - Actual Data
+# ========================================
+
+# --- DRUGS ---
+
+ex:Ibuprofen a ex:Drug ;
+    rdfs:label "Ibuprofen" ;
+    ex:treats ex:Arthritis, ex:Headache, ex:Fever ;
+    ex:hasMechanism ex:COX_Inhibitor ;
+    ex:alleviates ex:JointPain, ex:Inflammation ;
+    ex:hasActiveIngredient "Ibuprofen"^^xsd:string ;
+    ex:hasDosage "200-400mg every 4-6 hours"^^xsd:string .
+
+ex:Aspirin a ex:Drug ;
+    rdfs:label "Aspirin" ;
+    ex:treats ex:Headache, ex:Fever, ex:HeartDisease ;
+    ex:hasMechanism ex:COX_Inhibitor ;
+    ex:alleviates ex:Pain, ex:Inflammation ;
+    ex:hasActiveIngredient "Acetylsalicylic acid"^^xsd:string ;
+    ex:hasDosage "75-325mg daily for prevention"^^xsd:string .
+
+ex:Metformin a ex:Drug ;
+    rdfs:label "Metformin" ;
+    ex:treats ex:Diabetes ;
+    ex:hasMechanism ex:Glucose_Regulator ;
+    ex:alleviates ex:HighBloodSugar ;
+    ex:hasActiveIngredient "Metformin hydrochloride"^^xsd:string ;
+    ex:hasDosage "500-1000mg twice daily"^^xsd:string .
+
+ex:Lisinopril a ex:Drug ;
+    rdfs:label "Lisinopril" ;
+    ex:treats ex:Hypertension, ex:HeartDisease ;
+    ex:hasMechanism ex:ACE_Inhibitor ;
+    ex:alleviates ex:HighBloodPressure ;
+    ex:hasActiveIngredient "Lisinopril"^^xsd:string ;
+    ex:hasDosage "10-40mg once daily"^^xsd:string .
+
+ex:Albuterol a ex:Drug ;
+    rdfs:label "Albuterol" ;
+    ex:treats ex:Asthma ;
+    ex:hasMechanism ex:Bronchodilator ;
+    ex:alleviates ex:Wheezing, ex:Breathlessness ;
+    ex:hasActiveIngredient "Albuterol sulfate"^^xsd:string ;
+    ex:hasDosage "2 puffs every 4-6 hours"^^xsd:string .
+
+# --- DISEASES ---
+
+ex:Arthritis a ex:Disease ;
+    rdfs:label "Arthritis" ;
+    ex:hasSymptom ex:JointPain, ex:Inflammation, ex:Stiffness ;
+    rdfs:comment "Inflammation of joints causing pain and stiffness" .
+
+ex:Headache a ex:Disease ;
+    rdfs:label "Headache" ;
+    ex:hasSymptom ex:Pain ;
+    rdfs:comment "Pain in the head or upper neck" .
+
+ex:Fever a ex:Disease ;
+    rdfs:label "Fever" ;
+    ex:hasSymptom ex:HighBodyTemperature ;
+    rdfs:comment "Elevated body temperature, often due to infection" .
+
+ex:Diabetes a ex:Disease ;
+    rdfs:label "Diabetes" ;
+    ex:hasSymptom ex:HighBloodSugar, ex:Fatigue, ex:FrequentUrination ;
+    rdfs:comment "Metabolic disorder affecting blood sugar regulation" .
+
+ex:Hypertension a ex:Disease ;
+    rdfs:label "Hypertension" ;
+    ex:hasSymptom ex:HighBloodPressure ;
+    rdfs:comment "Persistently elevated blood pressure" .
+
+ex:HeartDisease a ex:Disease ;
+    rdfs:label "Heart Disease" ;
+    ex:hasSymptom ex:ChestPain, ex:Breathlessness ;
+    rdfs:comment "Conditions affecting the heart and blood vessels" .
+
+ex:Asthma a ex:Disease ;
+    rdfs:label "Asthma" ;
+    ex:hasSymptom ex:Wheezing, ex:Breathlessness, ex:Coughing ;
+    rdfs:comment "Chronic respiratory condition causing airway inflammation" .
+
+# --- SYMPTOMS ---
+
+ex:JointPain a ex:Symptom ;
+    rdfs:label "Joint Pain" ;
+    rdfs:comment "Discomfort in body joints" .
+
+ex:Inflammation a ex:Symptom ;
+    rdfs:label "Inflammation" ;
+    rdfs:comment "Swelling and redness of body tissue" .
+
+ex:Pain a ex:Symptom ;
+    rdfs:label "Pain" ;
+    rdfs:comment "Unpleasant sensory experience" .
+
+ex:HighBodyTemperature a ex:Symptom ;
+    rdfs:label "High Body Temperature" ;
+    rdfs:comment "Body temperature above normal range" .
+
+ex:HighBloodSugar a ex:Symptom ;
+    rdfs:label "High Blood Sugar" ;
+    rdfs:comment "Elevated glucose levels in blood" .
+
+ex:Fatigue a ex:Symptom ;
+    rdfs:label "Fatigue" ;
+    rdfs:comment "Extreme tiredness or exhaustion" .
+
+ex:FrequentUrination a ex:Symptom ;
+    rdfs:label "Frequent Urination" ;
+    rdfs:comment "Need to urinate more often than usual" .
+
+ex:HighBloodPressure a ex:Symptom ;
+    rdfs:label "High Blood Pressure" ;
+    rdfs:comment "Elevated force of blood against artery walls" .
+
+ex:ChestPain a ex:Symptom ;
+    rdfs:label "Chest Pain" ;
+    rdfs:comment "Discomfort in the chest area" .
+
+ex:Breathlessness a ex:Symptom ;
+    rdfs:label "Breathlessness" ;
+    rdfs:comment "Difficulty breathing or shortness of breath" .
+
+ex:Wheezing a ex:Symptom ;
+    rdfs:label "Wheezing" ;
+    rdfs:comment "High-pitched whistling sound when breathing" .
+
+ex:Stiffness a ex:Symptom ;
+    rdfs:label "Stiffness" ;
+    rdfs:comment "Difficulty moving joints freely" .
+
+ex:Coughing a ex:Symptom ;
+    rdfs:label "Coughing" ;
+    rdfs:comment "Forceful expulsion of air from lungs" .
+
+# --- MECHANISMS OF ACTION ---
+
+ex:COX_Inhibitor a ex:MechanismOfAction ;
+    rdfs:label "COX Inhibitor" ;
+    rdfs:comment "Blocks cyclooxygenase enzymes, reducing inflammation and pain" .
+
+ex:Glucose_Regulator a ex:MechanismOfAction ;
+    rdfs:label "Glucose Regulator" ;
+    rdfs:comment "Decreases glucose production and increases insulin sensitivity" .
+
+ex:ACE_Inhibitor a ex:MechanismOfAction ;
+    rdfs:label "ACE Inhibitor" ;
+    rdfs:comment "Blocks angiotensin-converting enzyme, lowering blood pressure" .
+
+ex:Bronchodilator a ex:MechanismOfAction ;
+    rdfs:label "Bronchodilator" ;
+    rdfs:comment "Relaxes bronchial muscles, opening airways" .
+
+# ========================================
+# END OF ONTOLOGY
+# ========================================

@@ -1,0 +1,176 @@
+# Sample SPARQL Queries for Healthcare Ontology
+# Copy and paste these into Fuseki's query interface to test!
+
+# ========================================
+# QUERY 1: Find all drugs that treat Arthritis
+# ========================================
+
+PREFIX ex: <http://example.org/healthcare#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?drug ?drugLabel ?mechanism
+WHERE {
+    ?drug ex:treats ex:Arthritis .
+    ?drug rdfs:label ?drugLabel .
+    ?drug ex:hasMechanism ?mechanism .
+}
+
+# Expected Result: Should return Ibuprofen with COX_Inhibitor mechanism
+
+
+# ========================================
+# QUERY 2: Find all symptoms of Diabetes
+# ========================================
+
+PREFIX ex: <http://example.org/healthcare#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?symptom ?symptomLabel
+WHERE {
+    ex:Diabetes ex:hasSymptom ?symptom .
+    ?symptom rdfs:label ?symptomLabel .
+}
+
+# Expected Result: HighBloodSugar, Fatigue, FrequentUrination
+
+
+# ========================================
+# QUERY 3: Find what Ibuprofen treats and how
+# ========================================
+
+PREFIX ex: <http://example.org/healthcare#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?disease ?diseaseLabel ?mechanism ?mechanismLabel
+WHERE {
+    ex:Ibuprofen ex:treats ?disease .
+    ex:Ibuprofen ex:hasMechanism ?mechanism .
+    ?disease rdfs:label ?diseaseLabel .
+    ?mechanism rdfs:label ?mechanismLabel .
+}
+
+# Expected Result: Arthritis, Headache, Fever all treated via COX_Inhibitor
+
+
+# ========================================
+# QUERY 4: Find all drugs and their mechanisms
+# ========================================
+
+PREFIX ex: <http://example.org/healthcare#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?drug ?drugLabel ?mechanism ?mechanismLabel
+WHERE {
+    ?drug a ex:Drug .
+    ?drug rdfs:label ?drugLabel .
+    ?drug ex:hasMechanism ?mechanism .
+    ?mechanism rdfs:label ?mechanismLabel .
+}
+
+# Expected Result: All 5 drugs with their mechanisms
+
+
+# ========================================
+# QUERY 5: Find drugs that alleviate Pain
+# ========================================
+
+PREFIX ex: <http://example.org/healthcare#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?drug ?drugLabel
+WHERE {
+    ?drug ex:alleviates ex:Pain .
+    ?drug rdfs:label ?drugLabel .
+}
+
+# Expected Result: Aspirin (and potentially Ibuprofen if you query JointPain)
+
+
+# ========================================
+# QUERY 6: Find treatment options for a disease
+# (More complex - combines multiple patterns)
+# ========================================
+
+PREFIX ex: <http://example.org/healthcare#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?drug ?drugLabel ?dosage ?symptom ?symptomLabel
+WHERE {
+    ?drug ex:treats ex:Hypertension .
+    ?drug rdfs:label ?drugLabel .
+    ?drug ex:hasDosage ?dosage .
+    ex:Hypertension ex:hasSymptom ?symptom .
+    ?symptom rdfs:label ?symptomLabel .
+}
+
+# Expected Result: Lisinopril with dosage and HighBloodPressure symptom
+
+
+# ========================================
+# QUERY 7: Find all information about a specific drug
+# (Useful for comprehensive drug lookup)
+# ========================================
+
+PREFIX ex: <http://example.org/healthcare#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?property ?value
+WHERE {
+    ex:Metformin ?property ?value .
+}
+
+# Expected Result: All properties of Metformin
+
+
+# ========================================
+# QUERY 8: Count drugs per mechanism
+# (Aggregation example)
+# ========================================
+
+PREFIX ex: <http://example.org/healthcare#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?mechanism (COUNT(?drug) AS ?drugCount)
+WHERE {
+    ?drug ex:hasMechanism ?mechanism .
+}
+GROUP BY ?mechanism
+
+# Expected Result: COX_Inhibitor: 2, others: 1 each
+
+
+# ========================================
+# QUERY 9: Find drugs treating multiple conditions
+# (Using FILTER)
+# ========================================
+
+PREFIX ex: <http://example.org/healthcare#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?drug ?drugLabel (COUNT(?disease) AS ?diseaseCount)
+WHERE {
+    ?drug ex:treats ?disease .
+    ?drug rdfs:label ?drugLabel .
+}
+GROUP BY ?drug ?drugLabel
+HAVING (COUNT(?disease) > 1)
+
+# Expected Result: Drugs that treat more than one condition
+
+
+# ========================================
+# QUERY 10: Construct new triples (CONSTRUCT query)
+# Creates a simplified view of drug-disease relationships
+# ========================================
+
+PREFIX ex: <http://example.org/healthcare#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+CONSTRUCT {
+    ?drug ex:canHelp ?disease .
+}
+WHERE {
+    ?drug ex:treats ?disease .
+}
+
+# This creates new triples with simplified relationship names
