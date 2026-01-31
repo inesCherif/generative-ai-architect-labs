@@ -1,0 +1,62 @@
+@prefix ex: <http://example.org/healthcare/> .
+
+ex:doc_001 a ex:Document ;
+    ex:hasCategory "Healthcare" ;
+    ex:hasRegion "US" ;
+    ex:hasText "The Affordable Care Act (ACA) provides health insurance coverage to millions of Americans. It includes provisions for preventive care, mental health services, and prescription drug coverage. The ACA operates through state and federal health insurance marketplaces." ;
+    ex:hasTopic "Insurance Coverage" .
+
+ex:doc_002 a ex:Document ;
+    ex:hasCategory "Healthcare" ;
+    ex:hasRegion "US" ;
+    ex:hasText "Medicare is a federal health insurance program primarily for people 65 and older. It has four parts: Part A covers hospital stays, Part B covers doctor visits, Part C is Medicare Advantage, and Part D covers prescription drugs. Eligibility typically begins at age 65." ;
+    ex:hasTopic "Medicare" .
+
+ex:doc_003 a ex:Document ;
+    ex:hasCategory "Healthcare" ;
+    ex:hasRegion "US" ;
+    ex:hasText "Medicaid provides health coverage to low-income individuals and families. It is a joint federal and state program, meaning coverage can vary by state. Medicaid covers essential health benefits including emergency services, pregnancy care, and mental health treatment." ;
+    ex:hasTopic "Medicaid" .
+
+ex:doc_004 a ex:Document ;
+    ex:hasCategory "Healthcare" ;
+    ex:hasRegion "US" ;
+    ex:hasText "Health Savings Accounts (HSAs) allow individuals to save money tax-free for medical expenses. To qualify for an HSA, you must be enrolled in a high-deductible health plan. HSA funds can be used for qualified medical expenses including doctor visits, prescriptions, and dental care." ;
+    ex:hasTopic "Savings Accounts" .
+
+ex:doc_005 a ex:Document ;
+    ex:hasCategory "Healthcare" ;
+    ex:hasRegion "US" ;
+    ex:hasText "Preventive care services under most health insurance plans are covered at no cost. These include annual checkups, immunizations, cancer screenings, and wellness visits. The goal is to detect health issues early when they are most treatable." ;
+    ex:hasTopic "Preventive Care" .
+
+ex:doc_006 a ex:Document ;
+    ex:hasCategory "Healthcare" ;
+    ex:hasRegion "US" ;
+    ex:hasText "Mental health parity laws require insurance companies to cover mental health services at the same level as physical health services. This includes therapy, counseling, and psychiatric care. Coverage cannot have higher copays or more restrictive limits for mental health treatment." ;
+    ex:hasTopic "Mental Health" .
+
+ex:doc_007 a ex:Document ;
+    ex:hasCategory "Healthcare" ;
+    ex:hasRegion "US" ;
+    ex:hasText "Prescription drug coverage varies by insurance plan. Most plans use a formulary - a list of covered medications. Generic drugs typically have lower copays than brand-name drugs. Some plans require prior authorization for certain medications." ;
+    ex:hasTopic "Prescriptions" .
+
+ex:doc_008 a ex:Document ;
+    ex:hasCategory "Healthcare" ;
+    ex:hasRegion "UK" ;
+    ex:hasText "The UK National Health Service (NHS) provides healthcare to all UK residents free at the point of use. It is funded through taxation. The NHS covers GP visits, hospital treatment, mental health services, and prescriptions with a standard charge in England." ;
+    ex:hasTopic "NHS" .
+
+ex:doc_009 a ex:Document ;
+    ex:hasCategory "Healthcare" ;
+    ex:hasRegion "US" ;
+    ex:hasText "COBRA allows you to continue your employer health insurance after leaving a job. You pay the full premium plus an administrative fee. COBRA coverage typically lasts 18 months. This provides a bridge while you find new coverage." ;
+    ex:hasTopic "COBRA" .
+
+ex:doc_010 a ex:Document ;
+    ex:hasCategory "Healthcare" ;
+    ex:hasRegion "US" ;
+    ex:hasText "Telehealth services have expanded significantly, allowing patients to consult doctors remotely via video or phone. Many insurance plans now cover telehealth visits. This improves access to care, especially in rural areas or for those with mobility issues." ;
+    ex:hasTopic "Telehealth" .
+
