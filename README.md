@@ -3,7 +3,7 @@
 > **Important Notice**: This repository contains my hands-on lab implementations and extensions developed while studying the **Udemy Certified Generative AI Architect with Knowledge Graphs** program.  
 > The code reflects my personal learning, enhancements, and architectural improvements beyond the original labs. Course materials are not included.
 
-## 📚 Overview
+## Overview
 
 A collection of 9 progressive labs exploring the full stack of Generative AI architecture - from basic LLM pipelines to production-ready cloud deployments with knowledge graphs and multi-agent systems.
 
@@ -11,7 +11,7 @@ A collection of 9 progressive labs exploring the full stack of Generative AI arc
 
 ---
 
-## 🎯 Learning Path
+## Learning Path
 
 ### **Lab 1: Basic LLM Pipeline**
 
@@ -40,9 +40,9 @@ Transformed a products dataset (100 items) into RDF triples using RDFLib → Upl
 
 **Outcome**: CSV → Knowledge Graph with queryable relationships.
 
----
-
 ![Demo image](./images/lab3.png)
+
+---
 
 ### **Lab 4: Hybrid RAG Pipeline**
 
@@ -179,6 +179,5 @@ This repository contains **only personal lab code and documentation**. No course
 
 ---
 
----
 
 _Last Updated: February 2026_
